@@ -1,17 +1,18 @@
 import { HashMap } from '@kit.ArkTS';
+import { Callback } from '@kit.BasicServicesKit';
 
 export interface RouterParams {
   name?: string,
   onPop?: (data: PopInfo) => void
 }
 
-export class NavRouter {
-  private static instance = new NavRouter();
+export class AppRouter {
+  private static instance = new AppRouter();
   private pathStack: NavPathStack = new NavPathStack();
   private routeMap: HashMap<string, WrappedBuilder<[object]>> = new HashMap();
 
-  public static getInstance(): NavRouter {
-    return NavRouter.instance;
+  public static getInstance(): AppRouter {
+    return AppRouter.instance;
   }
 
   public getPathStack(): NavPathStack {
@@ -28,11 +29,11 @@ export class NavRouter {
   }
 
   public static push(name: string): void {
-    NavRouter.instance.pushPath(name);
+    AppRouter.instance.pushPath(name);
   }
 
   public static openDialog(name: string, params?: RouterParams): void {
-    NavRouter.instance.pathStack.pushPath({
+    AppRouter.instance.pathStack.pushPath({
       name: name, param: params, onPop: (data: PopInfo) => {
         if (params?.onPop) {
           params.onPop!(data);
@@ -42,22 +43,22 @@ export class NavRouter {
   }
 
   public static replace(name: string, params?: RouterParams): void {
-    NavRouter.instance.pathStack.replacePath({ name: name, param: params });
+    AppRouter.instance.pathStack.replacePath({ name: name, param: params });
   }
 
   public static getParams(name: string): string {
-    return JSON.stringify(NavRouter.instance.pathStack.getParamByName(name));
+    return JSON.stringify(AppRouter.instance.pathStack.getParamByName(name));
   }
 
   public static getLastParams(): Object {
-    return NavRouter.instance.pathStack.getParamByIndex(NavRouter.instance.pathStack.size()-1) as Object;
+    return AppRouter.instance.pathStack.getParamByIndex(AppRouter.instance.pathStack.size()-1) as Object;
   }
 
   public static pop(): void {
-    NavRouter.instance.pathStack.pop();
+    AppRouter.instance.pathStack.pop();
   }
 
   public static popWithResult(params: RouterParams): void {
-    NavRouter.instance.pathStack.pop(params);
+    AppRouter.instance.pathStack.pop(params);
   }
 }

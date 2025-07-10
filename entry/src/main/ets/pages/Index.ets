@@ -1,31 +1,21 @@
-import { NavRouter } from '../router/NavRouter';
-import { OpenUniDialog } from '../util/OpenUniDialog';
+import { AppRouter } from '../router/NavRouter'
 
 @Entry
-@ComponentV2
+@Component
 struct Index {
-  @Local message: string = 'Hello World';
-
   build() {
-    Navigation(NavRouter.getInstance().getPathStack()) {
+    Navigation(AppRouter.getInstance().getPathStack()) {
       Stack({ alignContent: Alignment.Center }) {
         Column() {
-          Text(this.message)
-            .fontSize(36)
-            .fontColor(Color.Red)
-          Button('Click Me')
-            .onClick(() => {
-              this.message = 'Hello ArkUI';
-            })
-
           Button('基于Navigation实现自定义弹窗', { stateEffect: true, type: ButtonType.Capsule })
             .onClick(() => {
-              NavRouter.push('dialog')
+              AppRouter.push('dialog')
             })
         }
       }
+      .height('100%')
+      .width('100%')
     }
-    .height('100%')
-    .width('100%')
+    .hideTitleBar(true)
   }
 }
