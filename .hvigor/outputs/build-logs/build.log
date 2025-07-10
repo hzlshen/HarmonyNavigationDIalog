@@ -1,0 +1,152 @@
+[2025-07-10T12:28:27.157] [DEBUG] debug-file - env: nodejsVersion=v18.20.1
+[2025-07-10T12:28:28.187] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: false,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' }
+}
+[2025-07-10T12:28:28.223] [DEBUG] debug-file - hvigorfile, resolving D:\hzlshen\harmonyos\HarmonyDialogService\hvigorfile.ts
+[2025-07-10T12:28:32.304] [DEBUG] debug-file - hvigorfile, require result:  { default: { system: [Function: appTasks], plugins: [] } }
+[2025-07-10T12:28:32.632] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2025-07-10T12:28:32.659] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native,previewer
+[2025-07-10T12:28:32.641] [DEBUG] debug-file - Product 'default' using build option: {
+  "debuggable": true,
+  "strictMode": {
+    "caseSensitiveCheck": true,
+    "useNormalizedOHMUrl": true
+  }
+} in this build.
+[2025-07-10T12:28:32.665] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2025-07-10T12:28:32.688] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2025-07-10T12:28:32.747] [DEBUG] debug-file - Sdk init in 94 ms 
+[2025-07-10T12:28:32.785] [DEBUG] debug-file - Project task initialization takes 35 ms 
+[2025-07-10T12:28:32.797] [DEBUG] debug-file - hvigorfile, resolving D:\hzlshen\harmonyos\HarmonyDialogService\entry\hvigorfile.ts
+[2025-07-10T12:28:32.841] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2025-07-10T12:28:32.861] [DEBUG] debug-file - Module entry task initialization takes 11 ms 
+[2025-07-10T12:28:32.869] [DEBUG] debug-file - project has submodules:entry
+[2025-07-10T12:28:32.918] [DEBUG] debug-file - Configuration task cost before running: 4 s 759 ms 
+[2025-07-10T12:28:32.926] [DEBUG] debug-file - Executing task :entry:clean
+[2025-07-10T12:28:32.933] [DEBUG] debug-file - entry : clean cost memory 0.2431640625
+[2025-07-10T12:28:27.160] [DEBUG] debug-file - env: hvigor-config.json5 content = {
+  modelVersion: '5.0.3',
+  dependencies: {},
+  execution: {},
+  logging: {},
+  debugging: {},
+  nodeOptions: {}
+}
+[2025-07-10T12:28:32.973] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default",
+  "strictMode": {
+    "caseSensitiveCheck": true,
+    "useNormalizedOHMUrl": true
+  },
+  "name": "debug"
+} in this build.
+[2025-07-10T12:28:28.190] [DEBUG] debug-file - Since current hvigor version 5.15.3 differs from last hvigor version 
+      undefined, delete file-cache.json and task-cache.json.
+[2025-07-10T12:28:33.007] [DEBUG] debug-file - Create  resident worker with id: 0.
+[2025-07-10T12:28:32.305] [DEBUG] debug-file - hvigorfile, binding system plugins [Function: appTasks]
+[2025-07-10T12:28:32.633] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2025-07-10T12:28:32.653] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2025-07-10T12:28:32.785] [DEBUG] debug-file - hvigorfile, binding custom plugins []
+[2025-07-10T12:28:32.806] [DEBUG] debug-file - hvigorfile, require result:  { default: { system: [Function: hapTasks], plugins: [] } }
+[2025-07-10T12:28:32.861] [DEBUG] debug-file - hvigorfile, binding custom plugins []
+[2025-07-10T12:28:32.871] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2025-07-10T12:28:32.926] [DEBUG] debug-file - clean: Worker pool is inactive.
+[2025-07-10T12:28:32.841] [DEBUG] debug-file - Target 'default' config: {}
+[2025-07-10T12:28:32.933] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 773 ms 
+[2025-07-10T12:28:27.164] [DEBUG] debug-file - env: daemon=false
+[2025-07-10T12:28:32.981] [DEBUG] debug-file - Module 'entry' target 'ohosTest' using build option: {
+  "debuggable": true,
+  "strictMode": {
+    "caseSensitiveCheck": true,
+    "useNormalizedOHMUrl": true
+  },
+  "name": "default"
+} in this build.
+[2025-07-10T12:28:28.191] [DEBUG] debug-file - Cache service initialization finished in 3 ms 
+[2025-07-10T12:28:33.012] [DEBUG] debug-file - Create  resident worker with id: 1.
+[2025-07-10T12:28:32.633] [DEBUG] debug-file - Product 'default' build option: {}
+[2025-07-10T12:28:32.785] [DEBUG] debug-file - hvigorfile, no custom plugins were found in D:\hzlshen\harmonyos\HarmonyDialogService\hvigorfile.ts
+[2025-07-10T12:28:32.806] [DEBUG] debug-file - hvigorfile, binding system plugins [Function: hapTasks]
+[2025-07-10T12:28:32.861] [DEBUG] debug-file - hvigorfile, no custom plugins were found in D:\hzlshen\harmonyos\HarmonyDialogService\entry\hvigorfile.ts
+[2025-07-10T12:28:32.877] [DEBUG] debug-file - load to the disk finished
+[2025-07-10T12:28:32.842] [DEBUG] debug-file - Target 'ohosTest' config: {}
+[2025-07-10T12:28:32.935] [INFO] debug-file - Finished :entry:clean... after 8 ms 
+[2025-07-10T12:28:27.164] [DEBUG] debug-file - no-daemon, use the parent process.execArgv --max-old-space-size=8192,--expose-gc
+[2025-07-10T12:28:33.003] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2025-07-10T12:28:33.016] [DEBUG] debug-file - Current worker pool is stopped or closed.
+[2025-07-10T12:28:32.633] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2025-07-10T12:28:32.785] [DEBUG] debug-file - hvigorfile, resolve finished D:\hzlshen\harmonyos\HarmonyDialogService\hvigorfile.ts
+[2025-07-10T12:28:32.861] [DEBUG] debug-file - hvigorfile, resolve finished D:\hzlshen\harmonyos\HarmonyDialogService\entry\hvigorfile.ts
+[2025-07-10T12:28:32.878] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-07-10T12:28:32.843] [DEBUG] debug-file - Module 'entry' target 'default' build option: {
+  "debuggable": true,
+  "copyFrom": "default",
+  "strictMode": {
+    "caseSensitiveCheck": true,
+    "useNormalizedOHMUrl": true
+  },
+  "name": "debug"
+}
+[2025-07-10T12:28:32.935] [DEBUG] debug-file - Executing task ::clean
+[2025-07-10T12:28:33.003] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
+[2025-07-10T12:28:33.016] [DEBUG] debug-file - Clear worker 0.
+[2025-07-10T12:28:32.896] [DEBUG] debug-file - Module HarmonyDialogService Collected Dependency: 
+[2025-07-10T12:28:32.843] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option: {
+  "debuggable": true,
+  "strictMode": {
+    "caseSensitiveCheck": true,
+    "useNormalizedOHMUrl": true
+  },
+  "name": "default"
+}
+[2025-07-10T12:28:32.935] [DEBUG] debug-file - clean: Worker pool is inactive.
+[2025-07-10T12:28:33.016] [DEBUG] debug-file - Worker 0 has been cleared.
+[2025-07-10T12:28:32.896] [DEBUG] debug-file - Module HarmonyDialogService's total dependency: 0
+[2025-07-10T12:28:32.843] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2025-07-10T12:28:32.937] [DEBUG] debug-file - HarmonyDialogService : clean cost memory 0.0309600830078125
+[2025-07-10T12:28:33.016] [DEBUG] debug-file - Current idle worker size: 1.
+[2025-07-10T12:28:32.898] [DEBUG] debug-file - Start to initialize dependency information.
+[2025-07-10T12:28:32.844] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default",
+  "strictMode": {
+    "caseSensitiveCheck": true,
+    "useNormalizedOHMUrl": true
+  },
+  "name": "debug"
+} in this build.
+[2025-07-10T12:28:32.937] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 777 ms 
+[2025-07-10T12:28:33.016] [DEBUG] debug-file - Current busy worker size: 0.
+[2025-07-10T12:28:32.938] [INFO] debug-file - Finished ::clean... after 2 ms 
+[2025-07-10T12:28:32.903] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2025-07-10T12:28:33.016] [DEBUG] debug-file - Clear worker 1.
+[2025-07-10T12:28:32.938] [DEBUG] debug-file - Executing task :entry:init
+[2025-07-10T12:28:32.903] [DEBUG] debug-file - Module entry's total dependency: 0
+[2025-07-10T12:28:33.016] [DEBUG] debug-file - Worker 1 has been cleared.
+[2025-07-10T12:28:32.938] [DEBUG] debug-file - entry : init cost memory 0.01016998291015625
+[2025-07-10T12:28:32.910] [DEBUG] debug-file - Configuration phase cost:4 s 709 ms 
+[2025-07-10T12:28:33.016] [DEBUG] debug-file - Current idle worker size: 0.
+[2025-07-10T12:28:32.938] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 779 ms 
+[2025-07-10T12:28:33.016] [DEBUG] debug-file - Current busy worker size: 0.
+[2025-07-10T12:28:32.939] [INFO] debug-file - Finished :entry:init... after 1 ms 
+[2025-07-10T12:28:33.017] [DEBUG] debug-file - hvigor build process will be closed.
+[2025-07-10T12:28:33.029] [DEBUG] debug-file - worker[1] exits with exit code 0.
+[2025-07-10T12:28:32.939] [DEBUG] debug-file - Executing task ::init
+[2025-07-10T12:28:33.030] [DEBUG] debug-file - worker[0] exits with exit code 0.
+[2025-07-10T12:28:32.939] [DEBUG] debug-file - HarmonyDialogService : init cost memory 0.00894927978515625
+[2025-07-10T12:28:33.031] [DEBUG] debug-file - Current worker pool is terminated.
+[2025-07-10T12:28:32.939] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 779 ms 
+[2025-07-10T12:28:32.939] [INFO] debug-file - Finished ::init... after 1 ms 
