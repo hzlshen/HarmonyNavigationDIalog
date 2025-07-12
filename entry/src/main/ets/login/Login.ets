@@ -2,6 +2,9 @@ import { CommonConstants } from '../common/CommonConstants'
 import { AppRouter } from '../router/NavRouter'
 import { OpenUniDialog } from '../util/OpenUniDialog'
 
+/**
+ * 隐私协议弹窗
+ */
 @Builder
 export function PrivacyDialogViewBuilder() {
   PrivacyDialogView()
